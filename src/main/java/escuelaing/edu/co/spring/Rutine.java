@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@ComponentScan(basePackage = "escuelaing.edu.co.spring")
+@ComponentScan(basePackage = "escuelaing.edu.co.spring.prueba")
 public class Rutine {
     private static final int PORT = 8080;
     private static Rutine instance;
