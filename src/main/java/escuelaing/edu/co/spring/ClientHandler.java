@@ -33,24 +33,20 @@ class ClientHandler implements Runnable {
             String method = tokens[0];
             String URI = tokens[1];
  
-            //printRequestHeader(requestLine,in);
+            printRequestHeader(requestLine,in);
 
-            System.out.print(method + " " + URI);
 
             if (method.equals("GET") && !URI.startsWith("/app") && !URI.startsWith("/show")) {
-                System.out.println("XDDDDDDDDDD");
                 handleGetRequest(URI, out, dataOut);
             } else {
                 try {
                     String responseBody = null;
                     Integer contentLength = null;
                     if (URI.startsWith("/app")) {
-                        
                         System.out.println("");
                         responseBody = callService(URI, method);
                         contentLength = responseBody.getBytes().length;
                     } else if (URI.startsWith("/show")) {
-                        System.out.println("Springggggggggggggg");
                         System.out.println("");
                         responseBody = callServiceSpring(URI);
                         contentLength = responseBody.getBytes().length;
@@ -128,8 +124,6 @@ class ClientHandler implements Runnable {
         } else {
             response = (String) springMethod.invoke(null);
         }
-
-        System.out.println(response);
 
         return response;
     }

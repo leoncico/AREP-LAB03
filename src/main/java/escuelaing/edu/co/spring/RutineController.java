@@ -1,10 +1,4 @@
-package escuelaing.edu.co.spring.prueba;
-
-import escuelaing.edu.co.spring.GetMapping;
-import escuelaing.edu.co.spring.ListExerciseService;
-import escuelaing.edu.co.spring.RequestMapping;
-import escuelaing.edu.co.spring.RequestParam;
-import escuelaing.edu.co.spring.RestController;
+package escuelaing.edu.co.spring;
 
 @RestController
 public class RutineController {
@@ -15,6 +9,6 @@ public class RutineController {
 
     @GetMapping(value = "/show/greeting")
     public static String showName(@RequestParam(value = "name", defaultValue = "LeonardoDefault") String name){
-        return "Bienvenido" + name;
+        return "Bienvenido " + name;
     }
 }

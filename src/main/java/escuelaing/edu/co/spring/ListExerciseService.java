@@ -21,6 +21,6 @@ public class ListExerciseService implements RESTService{
     }
 
     public static String responseRecommended() {
-        return "{\"exercises\":[{\"name\":\"press\", \"series\":2}, {\"name\":\"sentadilla\", \"series\":8}]}";
+        return "{\"exercises\":[{\"name\":\"press\", \"series\":2}, {\"name\":\"sentadilla\", \"series\":8}, {\"name\":\"press militar\", \"series\":5}, {\"name\":\"elevaciones laterales\", \"series\":3}, {\"name\":\"Curl Femoral\", \"series\":3}]}";
     }
 }
