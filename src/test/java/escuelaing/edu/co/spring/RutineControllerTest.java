@@ -1,13 +1,6 @@
 package escuelaing.edu.co.spring;
 
-import escuelaing.edu.co.spring.RutineController;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-
-import java.util.Arrays;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RutineControllerTest {

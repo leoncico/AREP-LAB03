@@ -70,3 +70,7 @@ subgraph Spring Framework
 	Spring -->|Finds| Method
 end
 ```
+
+## Evaluación
+![](src/main/resources/webroot/03Lab03.PNG)
+Se prueban los metodos implementados
