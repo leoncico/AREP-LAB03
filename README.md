@@ -24,7 +24,16 @@ A continuación, ingresa el último comando para ejecutar el servidor:
 ```
 java -cp target/classes escuelaing.edu.co.spring.Rutine
 ```
-Y finalmente ingresa desde un Browser a la dirección [localhost:8080/greeting.html]() para interactuar con la aplicación web.
+Ya debería estar en ejecución el servidor así que ingresa desde un Browser a la dirección [localhost:8080/greeting.html]() para interactuar con la aplicación web.
+
+Para probar las nuevas funcionalidades implementadas para este Taller podrás ingresar tu nombre en el campo indicado, el cuál será enviado como parametro de tipo RequestParam en el método showName el cuál tiene la etiqueda GetMapping. En caso de que
+no se ingrese un valor, se establecerá un nombre por defecto.
+
+![](/src/main/resources/webroot/01lab03.PNG)
+
+Para la siguiente funcionalidad presiona Siguiente y se mostrará el apartado para agregar un ejercicio a la rutino, adicionalmente se muestra un Botón en la parte superior que si se presiona mostrará una lista de ejercicios quemados en el código, esta lista se obtiene con un método de la clase RutineController con la anotación RequestMapping.
+
+![](/src/main/resources/webroot/02lab03.PNG)
 
 ## Arquitectura
 La arquitectura utilizada se alinea con el patrón de Cliente - Servidor, en el cual existe un servidor que aloja todos los recursos (en un

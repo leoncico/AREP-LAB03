@@ -1,9 +1,5 @@
 package escuelaing.edu.co.spring;
 
-import escuelaing.edu.co.spring.ComponentLoader;
-import escuelaing.edu.co.spring.GetMapping;
-import escuelaing.edu.co.spring.RequestMapping;
-
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;

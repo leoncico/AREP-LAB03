@@ -6,10 +6,6 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
-/**
- * Component Loader
- * @author Andrés Arias
- */
 public class ComponentLoader {
 
     private static final List<Class<?>> classComponents = new ArrayList<>();
